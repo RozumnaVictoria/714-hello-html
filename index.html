@@ -5,12 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Sample</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <title>My dog</title>
+    <style>
+       h1, h2, h3{
+        color: rgb(209, 162, 33);
+       }
+       h4{
+        color: rgb(15, 211, 61);
+       }
+       .header{
+        font-family: Lobster, monospace;
+       }
+       body{
+        background-color: rgb(73, 127, 79);
+       }
+       .photo{
+        width: 300px;
+       }
+      body{
+        color: bisque;
+        margin: 10px 20px 10px 20px;
+      }
+      .thick-green-border{
+        border-color: green;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 70%;
+      }
+      .brown-background{
+        background-color: rgb(104, 66, 8);
+      }
+      .link{
+        color: aliceblue;
+      }
+    </style>
 </head>
 
 <body>
-    <h1>Hello HTML!!!</h1>
-    <img src="img/zyro-image.png" alt="">
+    <div class="brown-background">
+    <h1 class="header">Hello everybody :) </h1>
+    <h2>My name is Asti</h2>
+    <h3>I`m a Jack Russell Terrier</h3>
+    <h4>Look at my photo!</h4>
+    </div>
+
+    <a href="#"><img src="img/asti.jpg" alt="Asti" class="photo thick-green-border"></a>
+
+    <div class="brown-background">
+    <p> I love: </p>
+    <ul>
+        <li>Play with a ball</li>
+        <li>Walk on the street</li>
+        <li>Eat yummy</li>
+    </ul>
+    <p>I don`t like:</p>
+    <ol>
+        <li>Wash paws</li>
+        <li>Ride in a car</li>
+        <li>Cats</li>
+    </ol>
+
+    <label for="indoor"> 
+        <input id="indoor" type="radio" name="indoor-outdoor">Woof 
+      </label>
+      <label for="outdoor"> 
+        <input id="outdoor" type="radio" name="indoor-outdoor">Woof
+      </label>
+
+      <p>
+      <label for="jack"><input id="jack" type="checkbox" name="personality"> Jack</label> 
+      <label for="russell"><input id="russell" type="checkbox" name="personality"> Russell </label>
+      <label for="terrier"><input id="terrier" type="checkbox" name="personality"> Terrier</label>
+      </p>
+
+      <input type="text" placeholder="write me something">
+      <button type="submit">Send</button>
+
+      <p><a href="https://www.instagram.com/"  class="link">Follow me on Instagram</a></p>
+      </div>
+      
 </body>
 
 </html>
